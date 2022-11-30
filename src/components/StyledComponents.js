@@ -17,6 +17,9 @@ export const MainTitleSection = styled.h1`
         bottom:0;
         left:calc( 50% - 25px);
     }
+    @media (max-width:576px) {
+      font-size:30px;
+    }
     @media (max-width:768px)
     {
       margin-top:20px;
@@ -24,6 +27,24 @@ export const MainTitleSection = styled.h1`
 `;
 export const NormalText = styled.p`
     color:${props => props.theme.mainTextColor};
+    max-width:100%;
+    &.about-p
+    {
+      @media (max-width:410px)
+      {
+        word-break:break-word;
+        width:95%;
+      }
+    }
+`;
+export const NavMenuLinks = styled.ul`
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    justfiy-content:flex-start;
+    align-items:center;
+
 `;
 export const StyledLi = styled.li`
     font-size:18px;
@@ -33,7 +54,7 @@ export const StyledLi = styled.li`
     overflow:hidden;
     color:${(props)=> props.theme.mainTextColor};
     @media (max-width:576px) {
-      font-size:14px;
+      font-size:18px;
     }
     & > a 
     {
@@ -124,6 +145,7 @@ export const SkillBox = styled.div`
     margin-right:10px;
     margin-bottom:10px;
     border-radius:5px;
+
 `;
 export const ProjectBox = styled.a`
   display:block;
@@ -161,9 +183,9 @@ export const CustomLabel = styled.label`
   position:relative;
   z-index:1;
   @media (max-width:576px) {
-    height:25px;
-    width:50px;
-    padding:10px 4px;
+    // height:25px;
+    // width:50px;
+    // padding:10px 4px;
   }
 `;
 export const CustomController = styled.div`
@@ -179,16 +201,16 @@ export const CustomController = styled.div`
   position:absolute;
   left:5px;
   @media (max-width:576px) {
-    left:2px;
-    width:20px;
-    height:20px;
+    // left:2px;
+    // width:20px;
+    // height:20px;
   }
   &.dark-mode-on
   {
     left:30px;
-    @media (max-width:576px) {
-      left:26px;
-    }
+    // @media (max-width:576px) {
+    //   left:26px;
+    // }
   }
 `
 export const ContactForm = styled.form`

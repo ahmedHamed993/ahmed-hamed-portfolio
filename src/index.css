@@ -32,7 +32,15 @@ a
 @media (max-width:768px) {
     .home, .about, .projects, .contact 
     {
-        min-height:calc(100vh - 0px);
+        min-height:calc(100vh - 71px);
         height:auto;
     }
+    .skills 
+    {
+        padding-left:0px !important;
+    }
+}
+p 
+{
+    word-wrap:break-word !important;
 }
