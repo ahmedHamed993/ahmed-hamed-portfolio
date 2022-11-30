@@ -18,7 +18,7 @@ function App() {
 
   return (
     <ThemeProvider theme={appTheme === "light" ? lightTheme : darkTheme}>
-      <StyledMain className="App" style={{maxWidth:'100%', overflow':hidden'}} >
+      <StyledMain className="App" style={{maxWidth:'100%', overflow:'hidden'}} >
         <Navbar appTheme={appTheme} setAppTheme={setAppTheme} />
         <Routes>
           <Route path="/" element={<Home/>} /> 
