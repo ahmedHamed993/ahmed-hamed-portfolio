@@ -32,16 +32,33 @@ const Projects = () => {
       <NormalText style={{textAlign:'center',margin:'20px 0 0', lineHeight:'30px', color:'#757575'}}>
         Here you will find some of the personal projects that I created
       </NormalText>
-      <Container className="projects-container" style={{display:'grid', gap:'40px', gridTemplateColumns:'repeat(auto-fill,minmax(280px,1fr))'}}>
+      <Container 
+        className="projects-container" 
+        style={{display:'grid', gap:'40px', gridTemplateColumns:'repeat(auto-fill,minmax(280px,1fr))'}}
+      >
         {
           myProjects.map((project,index)=>(
             <ProjectBox href={project.url} key={index} className="project-card">
-              <img src={`${project.img}`} className="proj-banner" alt={project.name} style={{maxWidth:'100%',transition:'.3s ease-in'}} loading="lazy"/>
+              <img 
+                src={`${project.img}`} 
+                className="proj-banner" 
+                alt={project.name} 
+                style={{maxWidth:'100%',transition:'.3s ease-in'}} 
+              />
               <ProjectInfo className="proj-info">
-                <NormalText style={{textTransform:'capitalize', marginBottom:'5px', fontSize:'16px', fontWeight:'bold'}}>{project.name}</NormalText>
+                <NormalText 
+                  style={{textTransform:'capitalize', marginBottom:'5px', fontSize:'16px', fontWeight:'bold'}}
+                >
+                  {project.name}
+                </NormalText>
                 {
                   project.technologyUsed.map((tech,key) => (
-                    <SkillBox key={index} style={{display:'inline-block', padding:"3px 10px", marginRight:'3px', borderRadius:'10px'}}>{tech}</SkillBox>
+                    <SkillBox 
+                      key={index} 
+                      style={{display:'inline-block', padding:"3px 10px", marginRight:'3px', borderRadius:'10px'}}
+                    >
+                      {tech}
+                    </SkillBox>
                   ))
                 }
               </ProjectInfo>

@@ -15,10 +15,12 @@ import {StyledMain} from './components/StyledComponents';
 function App() {
   let savedTheme = localStorage.getItem("mode") || "light";
   const [appTheme, setAppTheme] = useState(savedTheme);
-
   return (
     <ThemeProvider theme={appTheme === "light" ? lightTheme : darkTheme}>
-      <StyledMain className="App" style={{maxWidth:'100%', overflow:'hidden'}} >
+      <StyledMain 
+        className="App" 
+        style={{maxWidth:'100%', overflow:'hidden'}} 
+      >
         <Navbar appTheme={appTheme} setAppTheme={setAppTheme} />
         <Routes>
           <Route path="/" element={<Home/>} /> 

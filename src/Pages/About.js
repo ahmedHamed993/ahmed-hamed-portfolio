@@ -23,13 +23,21 @@ const About = () => {
         >
             About me
         </MainTitleSection>
-        <NormalText className="about-p" style={{textAlign:'center',margin:'20px 0 0', lineHeight:'30px', color:'#757575'}}>
+        <NormalText 
+            className="about-p" 
+            style={{textAlign:'center',margin:'20px 0 0', lineHeight:'30px', color:'#757575'}}
+        >
             Here you will find more information about me, what I do, and my current skills mostly in terms <br/> 
             of programming and technology.
         </NormalText>
-        <Container className="about-text-container" style={{display:'flex', justifyContent:'space-between', alignItems:'flex-start'}}>
+        <Container 
+            className="about-text-container" 
+            style={{display:'flex', justifyContent:'space-between', alignItems:'flex-start'}}
+        >
             <div className='info' style={{flex:'1',minWidth:'330px', marginTop:'40px'}}>
-                <h2 style={{marginBottom:'20px', maxWidth:'90%'}}><NormalText>Get to know me!</NormalText></h2>
+                <h2 style={{marginBottom:'20px', maxWidth:'90%'}}>
+                    <NormalText>Get to know me!</NormalText>
+                </h2>
                 <NormalText className="about-p" style={{lineHeight:'25px', color:'#757575'}}>
                     I'm a <b>Frontend Web Developer</b> building the Front-end of Websites and Web Applications that leads to the success of the overall product.
                     Check out some of my work in the Projects section. 
@@ -42,8 +50,13 @@ const About = () => {
                     <Link to="/contact">Contact me</Link>
                 </CustomBtn>
             </div>
-            <div className='skills' style={{flex:'1', paddingLeft:'40px',minWidth:'330px', marginTop:'40px'}}>
-                <h2 style={{marginBottom:'20px', maxWidth:'90%'}}><NormalText>My Skills!</NormalText></h2>
+            <div 
+                className='skills' 
+                style={{flex:'1', paddingLeft:'40px',minWidth:'330px', marginTop:'40px'}}
+            >
+                <h2 style={{marginBottom:'20px', maxWidth:'90%'}}>
+                    <NormalText>My Skills!</NormalText>
+                </h2>
                 <div className="my-skills" style={{display:'flex', flexWrap:'wrap', maxWidth:'95%'}}>
                     {
                         mySkills.map((skill,index)=>(

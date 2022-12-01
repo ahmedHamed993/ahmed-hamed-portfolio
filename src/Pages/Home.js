@@ -41,10 +41,6 @@ const Home = () => {
           </StyledName> 
         </NormalText>
         <NormalText style={{fontSize:'40px', textAlign:'center'}}> I'm a Frontend Developer</NormalText>
-        {/* <DownloadLink style={{marginTop:'20px'}} href="#" download>
-          <NormalText>Download CV </NormalText>
-          <NormalText style={{lineHeight:'0em', marginLeft:'5px', fontSize:'18px'}}><AiOutlineCloudDownload/></NormalText>
-        </DownloadLink> */}
         <div className="socials" style={{display:'flex', gap:'20px', marginTop:'40px'}}>
           {
             mySocials.map((social,index) => (
