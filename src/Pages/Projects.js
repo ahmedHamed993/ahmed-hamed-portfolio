@@ -43,7 +43,7 @@ const Projects = () => {
                 src={`${project.img}`} 
                 className="proj-banner" 
                 alt={project.name} 
-                style={{maxWidth:'100%',transition:'.3s ease-in'}} 
+                style={{maxWidth:'100%',transition:'transform .3s ease-in'}} 
               />
               <ProjectInfo className="proj-info">
                 <NormalText 
