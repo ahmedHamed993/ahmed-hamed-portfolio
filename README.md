@@ -6,12 +6,16 @@
 
 ## Technologies Used 
 
-- ReactJs 
+- React.Js 
 - Local Storage 
-- Framer Motion 
+
+
+## Dependencies 
+- Sweet Alert 
 - EmailJS
-- Sweet Alert
+- Framer Motion
 - Styled Component 
+
 
 ## Website URl 
 https://ahmed-hamed-portfolio.vercel.app/
